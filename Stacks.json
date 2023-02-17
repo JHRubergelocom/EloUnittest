@@ -1,0 +1,191 @@
+{
+  "stacks": [
+    {
+      "solution": "common",
+      "stack": "ruberg-common",      
+      "eloPackages": [
+        {"name": "common", "folders": ["common"]},
+        {"name": "common_document", "folders": ["common_document"]},
+        {"name": "common_fx", "folders": ["common_fx"]},
+        {"name": "common_monitoring", "folders": ["common_monitoring"]},
+        {"name": "common_sig", "folders": ["common_signature"]},
+        {"name": "connector_groupware", "folders": ["connector_groupware"]},
+        {"name": "connector_ms365", "folders": ["connector_ms365"]},
+		
+        {"name": "connector_xml", "folders": ["connector_xml"]},
+        {"name": "dev", "folders": ["development", "dev_internal"]}
+      ],
+      "eloCommands": [
+        {"name": "eloPullUnittest", "cmd": "elo-sol pull", "workspace": "unittests-only" },
+        {"name": "eloPrepare", "cmd": "elo-sol prepare", "workspace": "jan", "version":"20.00"}
+      ]
+    },
+    {
+      "solution": "contract",
+      "stack": "ruberg-contract",      
+      "eloPackages": [
+        {"name": "contract", "folders": ["contract"]}
+      ],
+      "eloCommands": [
+        {"name": "eloPullUnittest", "cmd": "elo-sol pull", "workspace": "unittests-only" },
+        {"name": "eloPrepare", "cmd": "elo-sol prepare", "workspace": "de", "version":"20.00"}
+      ]
+    },
+    {
+      "solution": "hr",
+      "stack": "ruberg-hr",      
+      "eloPackages": [
+        {"name": "hr", "folders": ["hr", "hr_orgchart"]}
+      ],
+      "eloCommands": [
+        {"name": "eloPullUnittest", "cmd": "elo-sol pull", "workspace": "unittests-only" },
+        {"name": "eloPrepare", "cmd": "elo-sol prepare", "workspace": "de", "version":"20.00"}
+      ]
+    },
+    {
+      "solution": "invoice",
+      "stack": "ruberg-invoice",      
+      "eloPackages": [
+        {"name": "invoice", "folders": ["invoice", "invoice_datev", "invoice_electronic"]}, 
+        {"name": "connector_dx", "folders": ["connector_dx"]}
+      ],
+      "eloCommands": [
+        {"name": "eloPullUnittest", "cmd": "elo-sol pull", "workspace": "unittests-only" },
+        {"name": "eloPrepare", "cmd": "elo-sol prepare", "workspace": "jan", "version":"20.00"}
+      ]
+    },
+    {
+      "solution": "knowledge",
+      "stack": "ruberg-knowledge",
+      "eloPackages": [
+        {"name": "knowledge", "folders": ["knowledge"]}
+      ],
+      "eloCommands": [
+        {"name": "eloPullUnittest", "cmd": "elo-sol pull", "workspace": "unittests-only" },
+        {"name": "eloPullPackage", "cmd": "elo-sol pull", "workspace": "knowledge-only" },
+        {"name": "eloPrepare", "cmd": "elo-sol prepare", "workspace": "default", "version":"20.00" }
+      ]
+    },
+    {
+      "solution": "learning",
+      "stack": "ruberg-learning",      
+      "eloPackages": [
+        {"name": "learning", "folders": ["learning", "learning_gotowebinar"]}
+      ],
+      "eloCommands": [
+        {"name": "eloPullUnittest", "cmd": "elo-sol pull", "workspace": "unittests-only" },
+        {"name": "eloPrepare", "cmd": "elo-sol prepare", "workspace": "default", "version":"20.00" }
+      ]
+    },
+    {
+      "solution": "playground",
+      "stack": "playground",      
+      "eloPackages": [
+        {"name": "common", "folders": ["common"]},
+        {"name": "common_document", "folders": ["common_document"]},
+        {"name": "common_fx", "folders": ["common_fx"]},
+        {"name": "common_monitoring", "folders": ["common_monitoring"]},
+        {"name": "common_sig", "folders": ["common_signature"]},
+        {"name": "connector_xml", "folders": ["connector_xml"]},
+        {"name": "dev", "folders": ["development"]},
+        {"name": "contract", "folders": ["contract"]},
+        {"name": "hr", "folders": ["hr", "hr_orgchart"]},
+        {"name": "invoice", "folders": ["invoice", "invoice_datev", "invoice_electronic"]}, 
+        {"name": "connector_dx", "folders": ["connector_dx"]},
+        {"name": "knowledge", "folders": ["knowledge"]},
+        {"name": "learning", "folders": ["learning", "learning_gotowebinar"]},
+        {"name": "account", "folders": ["account"]}, 
+        {"name": "checklist", "folders": ["checklist"]}, 
+        {"name": "contact", "folders": ["contact"]}, 
+        {"name": "notify", "folders": ["notify"]}, 
+        {"name": "privacy", "folders": ["privacy"]},
+        {"name": "pubsec", "folders": ["pubsec", "pubsec_process"]}, 
+        {"name": "recruiting", "folders": ["recruiting", "recruiting_jobportal", "recruiting_integration"]}, 
+        {"name": "visitor", "folders": ["visitor"]}
+      ],
+      "eloCommands": []
+    },
+    {
+      "solution": "productivity",
+      "stack": "ruberg-productivity",      
+      "eloPackages": [
+        {"name": "account", "folders": ["account"]}, 
+        {"name": "checklist", "folders": ["checklist"]}, 
+        {"name": "contact", "folders": ["contact"]}, 
+        {"name": "notify", "folders": ["notify"]}, 
+        {"name": "privacy", "folders": ["privacy"]}
+      ],
+      "eloCommands": [
+        {"name": "eloPullUnittest", "cmd": "elo-sol pull", "workspace": "unittests-only" },
+        {"name": "eloPullPackage", "cmd": "elo-sol pull", "workspace": "notify-only" },
+        {"name": "eloPrepare", "cmd": "elo-sol prepare", "workspace": "jan", "version":"20.00" }
+      ]
+    },
+    {
+      "solution": "pubsec",
+      "stack": "ruberg-pubsec",
+      "eloPackages": [
+        {"name": "pubsec", "folders": ["pubsec", "pubsec_process"]} 
+      ],
+      "eloCommands": [
+        {"name": "eloPullUnittest", "cmd": "elo-sol pull", "workspace": "unittests-only" },
+        {"name": "eloPrepare", "cmd": "elo-sol prepare", "workspace": "de", "version":"20.00" }
+      ]
+    },
+    {
+      "solution": "recruiting",
+      "stack": "ruberg-recruiting",      
+      "eloPackages": [
+        {"name": "recruiting", "folders": ["recruiting", "recruiting_jobportal", "recruiting_integration"]} 
+      ],
+      "eloCommands": [
+        {"name": "eloPullUnittest", "cmd": "elo-sol pull", "workspace": "unittests-only" },
+        {"name": "eloPrepare", "cmd": "elo-sol prepare", "workspace": "de", "version":"20.00" }
+      ]
+    },
+    {
+      "solution": "visitor",
+      "stack": "ruberg-visitor",      
+      "eloPackages": [
+        {"name": "visitor", "folders": ["visitor"]}
+      ],
+      "eloCommands": [
+        {"name": "eloPullUnittest", "cmd": "elo-sol pull", "workspace": "unittests-only" },
+        {"name": "eloPrepare", "cmd": "elo-sol prepare", "workspace": "de", "version":"20.00" }
+      ]
+    },
+    {
+      "solution": "meeting",
+      "stack": "ruberg-meeting",      
+      "eloPackages": [
+        {"name": "meeting", "folders": ["meeting"]},
+        {"name": "meeting_groupware", "folders": ["meeting_groupware"]},
+        {"name": "meeting_premium", "folders": ["meeting_premium"]},
+        {"name": "meeting.note", "folders": ["meeting_note"]},
+        {"name": "meeting.task", "folders": ["meeting_task"]},
+        {"name": "meeting_ms365", "folders": ["meeting_ms365"]},
+        {"name": "meeting.voting", "folders": ["meeting_voting"]}
+      ],
+      "eloCommands": [
+        {"name": "eloPullUnittest", "cmd": "elo-sol pull", "workspace": "unittests-only" },
+        {"name": "eloPrepare", "cmd": "elo-sol prepare", "workspace": "premium-groupware", "version":"20.00" }                
+      ]
+    },    
+    {
+      "solution": "teamroom",
+      "stack": "ruberg-teamroom",      
+      "eloPackages": [
+        {"name": "teamroom", "folders": ["elo.teamroom", "elo.teamroom.Local", "elo.teamroom.Remote"]}
+      ],
+      "eloCommands": [
+        {"name": "eloPullUnittest", "cmd": "elo-sol pull", "workspace": "unittests-only" },
+        {"name": "eloPrepare", "cmd": "elo-sol prepare", "workspace": "jan", "version":"20.00" }                
+      ]
+    }    
+  ],
+  "gitSolutionsDir": "C:\\Git\\solutions",
+  "gitDevDir": "C:\\Git\\dev",
+  "arcPath": "ARCPATH[1]:/Administration/Business Solutions",
+  "user": "Administrator",
+  "pwd": "elo"
+}

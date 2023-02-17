@@ -8,10 +8,14 @@ module com.example.elounittest {
     requires net.synedra.validatorfx;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
-    requires eu.hansolo.fx.countries;
-    requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires EloixClient;
+    requires java.desktop;
+    requires com.google.gson;
+    requires java.rmi;
 
     opens com.example.elounittest to javafx.fxml;
     exports com.example.elounittest;
+    exports elounittest;
+    opens elounittest to javafx.fxml;
 }
