@@ -1,8 +1,8 @@
 #EloProperties
-#Fri Feb 17 11:30:54 CET 2023
+#Fri Feb 17 14:31:44 CET 2023
 Pattern=sol.learning.ix.functions.ForEach
 SelectedEloServices=KnowledgeBoard
 CaseSensitiv=false
 SelectedStack=ruberg-meeting
 SelectedEloCli=eloPrepare
-SelectedUnittestTools=matching
+SelectedUnittestTools=show
